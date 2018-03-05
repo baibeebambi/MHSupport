@@ -11,7 +11,8 @@ $(document).ready(() => {
 
     Display the results with q: matched results having top priorities
     keywords: being 2nd, since a perfect question match would be
-    more relevant to the user. Shows actualq with a.
+    more relevant to the user. Shows actualq with a. Makes sure
+    there are no repeat results (unique array)
 
     If not found, display text to show a list of questions instead.
     */
@@ -33,6 +34,12 @@ $(document).ready(() => {
             q: ['download world', 'can i download my world', 'how can i download my world', 'get world', 'world file'],
             a: 'Just do <em>/dl world</em> on your server!',
             keywords: ['world', 'download', 'file']
+        },
+        {
+            actualq: 'Why does tqnk smell like ass?',
+            q: ['tqnk ass', 'wtf is tqnk', 'why does tqnk smell like ass', 'smelly tqnk boi', 'why is tqnk so bad'],
+            a: 'We don\'t really know to be honest. He does smell really bad though..',
+            keywords: ['tqnk', 'smell', 'putrid', 'wtf']
         }
     ];
 
