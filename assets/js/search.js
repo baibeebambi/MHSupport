@@ -50,7 +50,7 @@ $(document).ready(() => {
         {
             actualq: 'Can I make my server private?',
             q: ['can i make my server private', 'private server'],
-            a: 'Yep! Just do the comamnd <em>/whitelist on</em>! You can add friends of yours using /whitelist add (username)! It is also possible to make your server "unlisted". This will prevent it from appearing in the Minehut Server list. This can be found in the panel. <br><img src="./assets/img/unlisted.png"><br>',
+            a: 'Yep! Just do the comamnd <em>/whitelist on</em>! You can add friends of yours using /whitelist add (username)! It is also possible to make your server "unlisted". This will prevent it from appearing in the Minehut Server list. This can be found in the panel. <br><img class="img-responsive" src="./assets/img/unlisted.png"><br>',
             keywords: ['whitelist', 'help', 'private', 'friends']
         },
         {
