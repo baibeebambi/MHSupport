@@ -19,7 +19,7 @@ $(document).ready(() => {
     var questions = [
         {
             actualq: 'How can I create a server?',
-            q: ['how can i create a server', 'how to make server', 'server make', 'make a server', 'create a server', 'die tqnk'],
+            q: ['how can i create a server', 'how to make server', 'server make', 'make a server', 'create a server'],
             a: 'Head over to the <a href="https://www.minehut.com" target=_blank>minehut.com</a> website! Then create an account, and boom, there\'s your server!',
             keywords: ['create', 'make', 'start', 'begin', 'help']
         },
@@ -40,6 +40,18 @@ $(document).ready(() => {
             q: ['tqnk ass', 'wtf is tqnk', 'why does tqnk smell like ass', 'smelly tqnk boi', 'why is tqnk so bad'],
             a: 'We don\'t really know to be honest. He does smell really bad though..',
             keywords: ['tqnk', 'smell', 'putrid', 'wtf']
+        },
+        {
+            actualq: 'Can I make my server accept versions before 1.12?',
+            q: ['before 1.12', 'other versions', 'can i make my server accept versions before 1.12', 'change versions', 'change version'],
+            a: 'Yep! Just install the plugin <strong>ProtocolSupport!</strong>',
+            keywords: ['1.8', '1.9', '1.10', '1.11', 'version', 'versions', 'change', 'protocol', 'help']
+        },
+        {
+            actualq: 'Can I make my server private?',
+            q: ['can i make my server private', 'private server'],
+            a: 'Yep! Just do the comamnd <em>/whitelist on</em>! You can add friends of yours using /whitelist add (username)! It is also possible to make your server "unlisted". This will prevent it from appearing in the Minehut Server list. This can be found in the panel. <br><img src="./assets/img/unlisted.png"><br>',
+            keywords: ['whitelist', 'help', 'private', 'friends']
         }
     ];
 
