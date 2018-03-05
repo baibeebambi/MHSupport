@@ -66,7 +66,6 @@ $(document).ready(() => {
             keywords: ['keepinventory', 'gamerule', 'help']
         },
         {
-<<<<<<< HEAD
             actualq: 'How do I install plugins in my server?',
             q: ['get plugins', 'install plugins', 'need mods', 'get mods', 'need plugins'],
             a: 'Just click on the \'Plugins\' tab on the <a href="https://www.minehut.com" target=_blank>minehut.com</a> panel! There, you can click to install plugins. You will need to restart your server for the changes to take place.',
@@ -95,12 +94,12 @@ $(document).ready(() => {
             q: ['need queue', 'make queue', 'make a queue', 'create a queue'],
             a: 'Ask <strong>Vocall</strong> (Minehut Player) in /msg. He\'ll help you.',
             keywords: ['queue', 'crazycow30', 'vocall', 'minigame', 'backyardigans']
-=======
+        },
+        {
             actualq: 'Need help making a website?',
             q: ['need website', 'get website', 'website help', 'help website'],
             a: 'Razviti (Discord: @Raz#1720) can help ya. He likes to create websites for people for free!',
             keywords: ['razviti', 'raz', 'website']
->>>>>>> tqnk
         }
     ];
 
