@@ -81,6 +81,7 @@ $(document).ready(() => {
         if(inp.length <= 0) {
             console.log('no');
             noin();
+            $('.trans:first').before('<div class="allaq" id="vocall"></div>');
         } else {
             used = 1;
             for(var z = 0; z < questions.length; z++) {
