@@ -111,6 +111,7 @@ loop3:
                 $('.trans:first').before('<div class="allaq" id="vocall"></div>');
                 $('.allaq').html(nores)
                 $('.subres').html('Found no results. ;(');
+                $('.trans:first').before('<div class="allaq" id="vocall"></div>');
             } 
             if(good.length > 0) {
                 var htadd;
