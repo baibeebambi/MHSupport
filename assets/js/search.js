@@ -33,7 +33,7 @@ $(document).ready(() => {
             actualq: 'How can I download my world?',
             q: ['download world', 'can i download my world', 'how can i download my world', 'get world', 'world file'],
             a: 'Just do <em>/dl world</em> on your server!',
-            keywords: ['world', 'download', 'file']
+            keywords: ['world', 'download', 'file', 'help']
         },
         {
             actualq: 'Why does tqnk smell like ass?',
@@ -52,6 +52,18 @@ $(document).ready(() => {
             q: ['can i make my server private', 'private server'],
             a: 'Yep! Just do the comamnd <em>/whitelist on</em>! You can add friends of yours using /whitelist add (username)! It is also possible to make your server "unlisted". This will prevent it from appearing in the Minehut Server list. This can be found in the panel. <br><img src="./assets/img/unlisted.png"><br>',
             keywords: ['whitelist', 'help', 'private', 'friends']
+        },
+        {
+            actualq: 'How can I upload a world to Minehut?',
+            q: ['need to upload world', "upload world", 'can i upload a world', 'how to upload world', "how can i upload a world to minehut", 'upload world to minehut', 'can i upload world to minehut', 'how to upload world', 'how to upload world to minehut'],
+            a: 'Yes, just follow these steps!:<br>1) Zip all the world files inside of the folder into 1 zip file.<br>2) Upload the zip to https://file.io/ or any other online file hosting.<br>3) Click the Copy Link button on file.io or on any other host, get a direct download link to that file.\n4) On your server, do the command /ul world name link After its uploaded, you can teleport to it using /world [Name].',
+            keywords: ['upload', 'world', 'help', 'file']
+        },
+        {
+            actualq: 'How do I turn on keepInventory in my server?',
+            q: ['how do i turn on keepinventory in my server', 'turn on keepinventory', 'can i turn on keepinventory in my server'],
+            a: 'Just do <strong>/gamerule keepInventory true</strong> on your server!',
+            keywords: ['keepinventory', 'gamerule', 'help']
         }
     ];
 
