@@ -19,9 +19,9 @@ $(document).ready(() => {
     var questions = [
         {
             actualq: 'How can I create a server?',
-            q: ['create a server', 'make server', 'server make', 'make a server', 'create a server', 'create server'],
+            q: ['create a server', 'make server', 'server make', 'make a server', 'create a server', 'create server', 'begin server', 'server begin'],
             a: 'Head over to the <a href="https://www.minehut.com" target=_blank>minehut.com</a> website! Then create an account, and boom, there\'s your server!',
-            keywords: ['create', 'make', 'start', 'begin', 'help']
+            keywords: ['create', 'start', 'begin', 'help']
         },
         {
             actualq: 'How do I get OP on my server?',
@@ -36,7 +36,7 @@ $(document).ready(() => {
             keywords: ['world', 'download', 'file', 'help']
         },
         {
-            actualq: 'Why does tqnk smell like ass?',
+            actualq: 'Why does tqnk smell like <em>really bad</em>?',
             q: ['tqnk ass', 'wtf is tqnk', 'why does tqnk smell like ass', 'smelly tqnk', 'tqnk so bad'],
             a: 'We don\'t really know to be honest. He does smell really bad though..',
             keywords: ['tqnk', 'smell', 'putrid', 'wtf']
@@ -51,7 +51,7 @@ $(document).ready(() => {
             actualq: 'Can I make my server private?',
             q: ['server private', 'private server'],
             a: 'Yep! Just do the command <em>/whitelist on</em>! You can add friends of yours using /whitelist add (username)! It is also possible to make your server "unlisted". This will prevent it from appearing in the Minehut Server list. This can be found in the panel. <br><img class="img-responsive" src="./assets/img/unlisted.png"><br>',
-            keywords: ['whitelist', 'help', 'private', 'friends']
+            keywords: ['whitelist', 'help', 'private', 'friends', 'unlisted']
         },
         {
             actualq: 'How can I upload a world to Minehut?',
@@ -100,6 +100,18 @@ $(document).ready(() => {
             q: ['need website', 'get website', 'website help', 'help website'],
             a: 'Razviti (Discord: @Raz#1720) can help ya. He likes to create websites for people for free!',
             keywords: ['razviti', 'raz', 'website']
+        },
+        {
+            actualq: 'Are staff applications available for Minehut?',
+            q: ['staff applications', 'staff apps', 'staff application', 'staff app', 'become staff', 'apply staff', 'apply for staff'],
+            a: 'Yep! Just head over to the Minehut Discord and applications are available under #applications!',
+            keywords: ['apply', 'staff', 'application', 'applications', 'moderator', 'mod', 'help']
+        },
+        {
+            actualq: 'iLemmino?',
+            q: ['is ilemmino', 'know ilemmino'],
+            a: 'Do you know iLemmino?',
+            keywords: ['ilemmino']
         }
     ];
 
@@ -121,7 +133,7 @@ $(document).ready(() => {
         var good = [];
         var inp = $('.inp').val();
         inp = inp.toLowerCase();
-        inp = inp.replace(/[-\/\\^$*+@#%&=+_`~<>,?.()|![\]{}]/gi, "");
+        inp = inp.replace(/[-\/\\^$*+@#%&=+_`~<>,?()|![\]{}]/gi, "");
         if(inp.length <= 0) {
             console.log('no');
             noin();
