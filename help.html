@@ -77,28 +77,78 @@
                 box-shadow:none !important;
                 background-color: transparent !important;
             }
+
+            @media screen and (max-width: 767px) {
+                .contrib {
+                    margin-top: -50px;
+                }
+            }
+
+            .navbar-collapse.collapse {
+                display: block !important;
+            }
+
+            .navbar-nav>li, .navbar-nav {
+                float: left !important;
+            }
+
+            .navbar-nav.navbar-right:last-child {
+                margin-right: -15px !important;
+            }
+
+            .navbar-right {
+                float: right!important;
+            }
+
+            .srch {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            
         </style>
     </head>
     <body>
-            <div class="jumbotron text-center">
-                    <div class="container">
-                        <nav class="mynav">   
-                            <div class="navbar-header">
-                            <a class="navbar-brand" href="/"><img src="./assets/img/mhlog.png" height=25 width=25></a>
-                            </div>
-                            <div class="collapse navbar-collapse" id="myNavbar">
-                            <ul class="nav navbar-nav navbar-right contrib">
-                                <li><a href="./help.html">Help</a></li>
-                                <li><a href="./contributors">Contributors</a></li>
-                            </ul>
-                            </div>
-                                
-                        </nav>
-                    </div>
-                    <br><br><br>
-                    <h1>Get answers here!</h1>
-                    <p>List of questions down below!</p>
-                    <br><br>
+        <div class="jumbotron text-center">
+                <div class="container">
+                    <nav class="mynav">   
+                        <div class="navbar-header">
+                        <a class="navbar-brand" href="/"><img src="./assets/img/mhlog.png" height=25 width=25></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right contrib">
+                            <li><a href="./help.html">Help</a></li>
+                            <li><a href="./contributors">Contributors</a></li>
+                        </ul>
+                        </div>
+                            
+                    </nav>
                 </div>
+                <br><br><br>
+                <h2>Get answers here!</h2>
+                <br>
+                <form class="srch">
+                    <div class="input-group">
+                            <input type="text" class="form-control" size="50" placeholder="Question" required>
+                            <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary">Search</button>
+                            </div>
+                    </div>
+                </form>
+                <br><br>
+                <footer class="page-footer font-small blue pt-4 mt-4" style="font-family: 'Mukta Mahee', 'sans-serif';">
+                    <div class="container-fluid text-center">   
+                        <h5 class="text-uppercase">Site Map</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright py-3 text-center">
+                        <div class="container-fluid">
+                            © 2018 MHSupport
+                        </div>
+                    </div>       
+                </footer>   
+        </div>
     </body>
 </html>
