@@ -250,6 +250,48 @@
                 padding-left: 20%;
                 padding-right: 20%;
             }
+
+            #snackbar {
+                visibility: hidden;
+                min-width: 250px;
+                margin-left: -125px;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                border-radius: 2px;
+                padding: 16px;
+                position: fixed;
+                z-index: 1;
+                left: 50%;
+                bottom: 30px;
+                font-size: 17px;
+            }
+
+            #snackbar.show {
+                visibility: visible;
+                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
+
+            @-webkit-keyframes fadein {
+                from {bottom: 0; opacity: 0;} 
+                to {bottom: 30px; opacity: 1;}
+            }
+
+            @keyframes fadein {
+                from {bottom: 0; opacity: 0;}
+                to {bottom: 30px; opacity: 1;}
+            }
+
+            @-webkit-keyframes fadeout {
+                from {bottom: 30px; opacity: 1;} 
+                to {bottom: 0; opacity: 0;}
+            }
+
+            @keyframes fadeout {
+                from {bottom: 30px; opacity: 1;}
+                to {bottom: 0; opacity: 0;}
+            }
             
         </style>
     </head>
@@ -274,25 +316,34 @@
                 <br>
                 <form class="srch">
                     <div class="input-group">
-                            <input type="text" class="form-control" size="50" placeholder="Question" required>
+                            <input type="text" class="inp form-control" size="50" placeholder="Question" required>
                             <div class="input-group-btn">
-                            <button type="button" class="btn btn-primary">Search</button>
+                            <button type="button" class="sbtn btn btn-primary">Search</button>
                             </div>
                     </div>
                 </form>
                 <br><br> </div>
+                
+                <div class="row container" style="color: black !important; padding-top: 40px; padding-bottom: 40px; padding-left: 10%;">
+                    <h2 class="">Search results will appear here:</h2>
+                    <h5 class="subres" style="font-family: 'Raleway', sans-serif;"></h5>
+                </div>
+                <!--
                 <div class="row container" style="color: black !important; padding-top: 40px; padding-bottom: 40px;">
-                    <div class="col-sm-10 col-sm-offset-2">
-                        <h2 class="text-center">Search results will appear here:</h2>
+                    <div class="col-sm-10 col-sm-offset-2">  
                             <div class="card">
                                     <div class="card-block">
                                       <h2>Ree</h2>
                                       <p>test</p>
                                     </div>
-                            </div>
+                            </div> 
                     </div>
                 </div>
-                
+                -->
+                <div id="master">
+                <span class="addal"></span>
+                <span class="trans"></span>
+                </div>
 
                 <footer class="page-footer font-small blue pt-4 mt-4" style="font-family: 'Mukta Mahee', 'sans-serif';">
                     <div class="container-fluid text-center">   
@@ -307,7 +358,11 @@
                             © 2018 MHSupport
                         </div>
                     </div>       
-                </footer>   
-       
+                </footer>
+                <div id="snackbar" style="font-family: 'Raleway', sans-serif;">
+                    No input!
+                </div>
+       <!-- Script -->
+       <script src="./assets/js/search.js"></script>
     </body>
 </html>
