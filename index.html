@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./assets/js/grabber.js"></script>
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -23,6 +24,27 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <style>
+            /* width */
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: black;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: rgb(95, 86, 86); 
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2c2626; 
+            }
+
+
             body {
                 font: 'Open Sans', sans-serif;
                 color: white;
@@ -92,6 +114,84 @@
                 border: 2px solid rgb(255, 255, 255);
                 font-family: 'Raleway', 'sans-serif';
             }
+
+            footer {
+                background-color: rgb(22, 35, 54);
+                padding:15px;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            footer ul {
+                color:#8c8b8b;
+                list-style: none;
+                margin-top:20px;
+            }
+
+
+
+            footer a {
+                color: rgba(255, 255, 255, .7);
+                transition: all .4s ease;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+            }
+
+
+            footer a:hover, footer a:focus {
+                color: rgb(243, 234, 234);
+                transition: all .3s ease;
+                text-decoration: none;
+            }
+
+            @media screen and (min-width: 768px) {
+                table {
+                    padding-left: 20px;
+                }
+            }
+
+            th {
+                line-height: 45px !important;
+                min-height: 25px;
+                height: 25px;
+                margin-left: 20px !important;
+            }
+            td {
+                line-height: 45px !important;
+                min-height: 25px;
+                height: 25px;
+            }
+
+            #myProgress {
+                width: 76%;
+                background-color: #ddd;
+            }
+
+            #myBar {
+                width: 10%;
+                height: 5px;
+                background-color: rgb(47, 61, 138);
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+
+            #myBar2 {
+                width: 10%;
+                height: 5px;
+                background-color: rgb(47, 61, 138);
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+
+            .fn1 {
+                font-family: 'Roboto', 'sans-serif';
+                font-weight: 520;
+            }
         </style>
     </head>
     <body>
@@ -103,11 +203,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#"><img src="./assets/img/mhpix.png"></a>
+                <a class="navbar-brand" href="#"><img src="./assets/img/mhlog.png" height=25 width=25></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">Contributors</a></li>
+                    <li><a href="/contributors.html">Contributors</a></li>
                 </ul>
                 </div>
             </div>
@@ -138,6 +238,73 @@
                 </div>
             </div>
         </div>
+<br><br>
+        <div class="container row" style="color: black; padding-bottom: 20px;">
+            <div class="col-sm-5 col-sm-offset-1">
+                    <table class="table" style="color: rgb(58, 57, 57); font-weight: normal !important; line-height: 1.8;">
+                            <thead>
+                              <tr>
+                                <th style="font-weight: normal; color: rgb(100, 93, 93);">Hot Servers</th>
+                                <th style="font-weight: normal; color: rgb(100, 93, 93);" class="text-right">Players</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th style="font-weight: normal;" id="1"></th>
+                                <td style="font-weight: normal;" id="1b" class="text-right">Mark</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;" id="2"></th>
+                                <td style="font-weight: normal;" id="2b" class="text-right">Jacob</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;" id="3"></th>
+                                <td style="font-weight: normal;" id="3b" class="text-right">Jacob</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;" id="4"></th>
+                                <td style="font-weight: normal;" id="4b" class="text-right">Jacob</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;" id="5"></th>
+                                <td style="font-weight: normal;" id="5b" class="text-right">Jacob</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 fn1">
+                        <h3>Network Stats</h3><br>
+                        <p style="line-height: 1.8;" class="scoun">Server Count: </p>
+                        <div id="myProgress">
+                            <div id="myBar"></div>
+                        </div>
+                        <br><br>
+                        <p class="rcoun">Ram Usage</h3><p>
+                        <div id="myProgress">
+                            <div id="myBar2"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Player count: <h4><span class="reecn label label-primary" style="font-family: 'Roboto', 'sans-serif';">5</span></h4></p>
+                    </div>
+                </div>
+
+        <footer class="page-footer font-small blue pt-4 mt-4" style="font-family: 'Mukta Mahee', 'sans-serif';">
+            <div class="container-fluid text-center">
+                
+                        <h5 class="text-uppercase">Site Map</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+
+            </div>
+            <div class="footer-copyright py-3 text-center">
+                <div class="container-fluid">
+                    © 2018 MHSupport
+                </div>
+            </div>       
+        </footer>
 
         <script src="./assets/js/typed.js" type="text/javascript"></script>
         <script src="./assets/js/typeload.js"></script>
