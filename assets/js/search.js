@@ -94,6 +94,12 @@ $(document).ready(() => {
             q: ['need queue', 'make queue', 'make a queue', 'create a queue'],
             a: 'Ask <strong>Vocall</strong> (Minehut Player) in /msg. He\'ll help you.',
             keywords: ['queue', 'crazycow30', 'vocall', 'minigame', 'backyardigans']
+        },
+        {
+            actualq: 'Need help making a website?',
+            q: ['need website', 'get website', 'website help', 'help website'],
+            a: 'Razviti (Discord: @Raz#1720) can help ya. He likes to create websites for people for free!',
+            keywords: ['razviti', 'raz', 'website']
         }
     ];
 
