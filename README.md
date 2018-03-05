@@ -1,2 +1,2 @@
 # MHSupport
-Website
+Website for minehut users.
