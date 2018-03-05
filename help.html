@@ -10,6 +10,7 @@
         <!-- Bootstrap Font Awesome -->
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/cards.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./assets/js/grabber.js"></script>
@@ -29,35 +30,75 @@
 
         <!-- CSS -->
         <style>
+            /* width */
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: black;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: rgb(95, 86, 86); 
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2c2626; 
+            }
+
             body {
-                font-family: 'Roboto', sans-serif;
-                color: rgb(0, 0, 0);
+                font: 'Open Sans', sans-serif;
+                color: white !important;
             }
-            .mynav {
-                color: rgb(0, 0, 0) !important;
-                background:transparent !important;
-                background-image:transparent !important;
-                border-color:transparent !important;
-                box-shadow:none !important;
-                background-color: transparent !important;
-              }
-            
-            nav button {
-                color: rgb(0, 0, 0) !important;
-                font-family: 'Raleway', 'sans-serif';
-                text-decoration: none;
+
+            h1 {
+                font: 'Open Sans', sans-serif;
+                color: white !important;
             }
+
+            h2 {
+                font-size: 24px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+                    
+            h4 {
+                font-size: 19px;
+                line-height: 1.375em;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }  
 
             .jumbotron {
                 height: 450px;
-                background-image: url('./assets/img/45degreee_fabric.png');
+                background-image: url('./assets/img/lob2.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center; 
             }
 
+            .mynav {
+                color: white !important;
+                background:transparent !important;
+                background-image:transparent !important;
+                border-color:transparent !important;
+                box-shadow:none !important;
+                background-color: transparent !important;
+            }
+                        
+            nav button {
+                color: white !important;
+                font-family: 'Raleway', 'sans-serif';
+                text-decoration: none;
+            }
+
             nav a {
-                color: rgb(0, 0, 0) !important;
+                color: white !important;
                 font-family: 'Raleway', 'sans-serif';
                 text-decoration: none;
                 background:transparent !important;
@@ -77,11 +118,116 @@
                 box-shadow:none !important;
                 background-color: transparent !important;
             }
+                        
+            button:hover {
+                color: white !important;
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            button:focus {
+                color: white !important;
+                opacity: 0.6;
+                text-decoration: none;            
+            }
+
+            button:active {
+                color: white !important;
+                text-decoration: none;
+            }
+
+            .btn-transparent {
+                background: transparent;
+                color: white;
+                -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+                -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+                -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+                transition: background .2s ease-in-out, border .2s ease-in-out;
+                border: 2px solid rgb(255, 255, 255);
+                font-family: 'Raleway', 'sans-serif';
+            }
+
+            footer {
+                background-color: rgb(22, 35, 54);
+                color: white !important;
+                padding:15px;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            footer ul {
+                color:#8c8b8b;
+                list-style: none;
+                margin-top:20px;
+            }
+
+            footer a {
+                color: rgba(255, 255, 255, .7);
+                transition: all .4s ease;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+            }
+
+            footer a:hover, footer a:focus {
+                color: rgb(243, 234, 234);
+                transition: all .3s ease;
+                text-decoration: none;
+            }
+
+            @media screen and (min-width: 768px) {
+                table {
+                    padding-left: 20px;
+                    }
+            }
 
             @media screen and (max-width: 767px) {
                 .contrib {
                     margin-top: -50px;
                 }
+            }
+
+            th {
+                line-height: 45px !important;
+                min-height: 25px;
+                height: 25px;
+                margin-left: 20px !important;
+            }
+                        
+            td {
+                line-height: 45px !important;
+                min-height: 25px;
+                height: 25px;
+            }
+
+            #myProgress {
+                width: 76%;
+                background-color: #ddd;
+            }
+
+            #myBar {
+                width: 10%;
+                height: 5px;
+                background-color: rgb(47, 61, 138);
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+
+            #myBar2 {
+                width: 10%;
+                height: 5px;
+                background-color: rgb(47, 61, 138);
+                text-align: center;
+                line-height: 30px;
+                color: white;
+            }
+
+            .fn1 {
+                font-family: 'Roboto', 'sans-serif';
+                font-weight: 520;
             }
 
             .navbar-collapse.collapse {
@@ -134,7 +280,20 @@
                             </div>
                     </div>
                 </form>
-                <br><br>
+                <br><br> </div>
+                <div class="row container" style="color: black !important; padding-top: 40px; padding-bottom: 40px;">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <h2 class="text-center">Search results will appear here:</h2>
+                            <div class="card">
+                                    <div class="card-block">
+                                      <h2>Ree</h2>
+                                      <p>test</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                
+
                 <footer class="page-footer font-small blue pt-4 mt-4" style="font-family: 'Mukta Mahee', 'sans-serif';">
                     <div class="container-fluid text-center">   
                         <h5 class="text-uppercase">Site Map</h5>
@@ -149,6 +308,6 @@
                         </div>
                     </div>       
                 </footer>   
-        </div>
+       
     </body>
 </html>
