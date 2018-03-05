@@ -1,6 +1,6 @@
 $(document).ready(() => {
     $("span.typed").typed({
-        strings: ["Get your questions answered.", "Free Server Hosting", "Instant Answers", "Minehut Support Team."],
+        strings: ["Free Server Hosting", "Free Server Hosting", "Free Server Hosting", "Free Server Hosting"],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 700,
