@@ -77,7 +77,7 @@ $(document).ready(() => {
         var good = [];
         var inp = $('.inp').val();
         inp = inp.toLowerCase();
-        inp = inp.replace(/\?/gi, "");
+        inp = inp.replace(/[-\/\\^$*+@#%&=+_`~<>,?.()|![\]{}]/gi, "");
         if(inp.length <= 0) {
             console.log('no');
             noin();
