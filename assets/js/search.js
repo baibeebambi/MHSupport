@@ -64,6 +64,12 @@ $(document).ready(() => {
             q: ['how do i turn on keepinventory in my server', 'turn on keepinventory', 'can i turn on keepinventory in my server'],
             a: 'Just do <strong>/gamerule keepInventory true</strong> on your server!',
             keywords: ['keepinventory', 'gamerule', 'help']
+        },
+        {
+            actualq: 'Need help making a website?',
+            q: ['need website', 'get website', 'website help', 'help website'],
+            a: 'Razviti (Discord: @Raz#1720) can help ya. He likes to create websites for people for free!',
+            keywords: ['razviti', 'raz', 'website']
         }
     ];
 
