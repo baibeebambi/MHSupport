@@ -67,7 +67,15 @@ $(document).ready(() => {
         }
     ];
 
-    $('.sbtn').click(() => {
+    $(document).ready(function(){
+        $('#frm').keypress(function(e){
+            if(e.keyCode==13) {
+                $('.sbtn').click();
+            }
+        });
+    });
+
+    $('.sbtn').click(function submit() {
         $('.subres').html('');
         if(used > 0) {
             var parent = document.getElementById("master")
@@ -141,7 +149,7 @@ loop3:
             }
             $('.trans:first').before('<div class="allaq" id="vocall"></div>');
             $('.allaq').html(htadd)
-            $("html, div").animate(
+            $("html, body").animate(
                 { scrollTop: $('#vocall').offset().top }
             , 1000);
 
