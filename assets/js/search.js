@@ -141,6 +141,9 @@ loop3:
             }
             $('.trans:first').before('<div class="allaq" id="vocall"></div>');
             $('.allaq').html(htadd)
+            $("html, div").animate(
+                { scrollTop: $('#vocall').offset().top }
+            , 1000);
 
         }
     });
