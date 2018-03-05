@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Minehut Support.</title>
+        <title>Minehut Support</title>
         <meta charset="UTF-8">
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <!-- Mobile Zoom -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap Font Awesome -->
@@ -62,13 +62,11 @@
                 margin-bottom: 30px;
             }  
             .jumbotron {
-                padding: 100px 25px;
                 height: 450px;
                 background-image: url('./assets/img/lob2.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center; 
-                line-height: 1.8
             }
             .mynav {
                 color: white !important;
@@ -89,6 +87,22 @@
                 color: white !important;
                 font-family: 'Raleway', 'sans-serif';
                 text-decoration: none;
+                background:transparent !important;
+                background-image:transparent !important;
+                border-color:transparent !important;
+                box-shadow:none !important;
+                background-color: transparent !important;
+            }
+
+            nav a:hover {
+                color: rgb(133, 124, 124) !important;
+                font-family: 'Raleway', 'sans-serif';
+                text-decoration: none;
+                background:transparent !important;
+                background-image:transparent !important;
+                border-color:transparent !important;
+                box-shadow:none !important;
+                background-color: transparent !important;
             }
             
             button:hover {
@@ -99,7 +113,7 @@
             button:focus {
                 color: white !important;
                 opacity: 0.6;
-                text-decoration: none;
+                text-decoration: none;            
             }
             button:active {
                 color: white !important;
@@ -155,6 +169,12 @@
                 }
             }
 
+            @media screen and (max-width: 767px) {
+                .contrib {
+                    margin-top: -50px;
+                }
+            }
+
             th {
                 line-height: 45px !important;
                 min-height: 25px;
@@ -194,31 +214,45 @@
                 font-family: 'Roboto', 'sans-serif';
                 font-weight: 520;
             }
+
+            .navbar-collapse.collapse {
+                display: block !important;
+            }
+
+            .navbar-nav>li, .navbar-nav {
+                float: left !important;
+            }
+
+            .navbar-nav.navbar-right:last-child {
+                margin-right: -15px !important;
+            }
+
+            .navbar-right {
+                float: right!important;
+            }
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-default mynav navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#"><img src="./assets/img/mhlog.png" height=25 width=25></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/contributors">Contributors</a></li>
-                </ul>
-                </div>
-            </div>
-        </nav>
         <div class="jumbotron text-center">
+            <div class="container">
+                <nav class="mynav">
+                        
+                            <div class="navbar-header">
+                            <a class="navbar-brand" href="#"><img src="./assets/img/mhlog.png" height=25 width=25></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right contrib">
+                                <li><a href="./help.html">Help</a></li>
+                                <li><a href="./contributors.html">Contributors</a></li>
+                            </ul>
+                            </div>
+                        
+                </nav>
+            </div>
             <h1>Minehut Support</h1> 
             <p><span class="typed"></span></p> 
             <br><br>
-            <button type="button" class="btn btn-transparent waves-effect" onclick="alert('test')">Get Answers</button>
+            <a href="./help.html"><button type="button" class="btn btn-transparent waves-effect">Get Answers</button></a>
         </div>
 
         <div class="container" style="padding-top: 20px; padding-bottom: 20px; color: black;">
@@ -226,12 +260,12 @@
                 <div class="col-sm-4">
                     <h3>Answers on demand</h3>
                     <br>
-                    <p>We have the most frequently asked questions asked across Minehut. Ask your question, and we most likely already have your answer!</p>
+                    <p>We have the most frequently asked questions asked across Minehut. Ask your question, and we most likely already have your answer.</p>
                 </div>
                 <div class="col-sm-4">
                     <h3>Support Team</h3>
                     <br>
-                    <p>Still need a question answered that you can't find on our archives? No problem! We have a team dedicated to help the Minehut community!</p>
+                    <p>Still need a question answered that you can't find on our archives? No problem! We have a team to help the Minehut community.</p>
                 </div>
                 <div class="col-sm-4">
                     <h3>Active Community</h3>
@@ -246,33 +280,34 @@
                     <table class="table" style="color: rgb(58, 57, 57); font-weight: normal !important; line-height: 1.8;">
                             <thead>
                               <tr>
-                                <th style="font-weight: normal; color: rgb(100, 93, 93);">Top 5 Servers</th>
+                                <th style="font-weight: normal; color: rgb(100, 93, 93);">Top 5 Servers (Full list <a href="https://cmdhub.js.org/mhs.html" target=_blank>here</a>)</th>
                                 <th style="font-weight: normal; color: rgb(100, 93, 93);" class="text-right">Players</th>
                               </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <th style="font-weight: normal;" id="1"></th>
-                                <td style="font-weight: normal;" id="1b" class="text-right">Mark</td>
+                                <td style="font-weight: normal;" id="1b" class="text-right"></td>
                             </tr>
                             <tr>
                                 <th style="font-weight: normal;" id="2"></th>
-                                <td style="font-weight: normal;" id="2b" class="text-right">Jacob</td>
+                                <td style="font-weight: normal;" id="2b" class="text-right"></td>
                             </tr>
                             <tr>
                                 <th style="font-weight: normal;" id="3"></th>
-                                <td style="font-weight: normal;" id="3b" class="text-right">Jacob</td>
+                                <td style="font-weight: normal;" id="3b" class="text-right"></td>
                             </tr>
                             <tr>
                                 <th style="font-weight: normal;" id="4"></th>
-                                <td style="font-weight: normal;" id="4b" class="text-right">Jacob</td>
+                                <td style="font-weight: normal;" id="4b" class="text-right"></td>
                             </tr>
                             <tr>
                                 <th style="font-weight: normal;" id="5"></th>
-                                <td style="font-weight: normal;" id="5b" class="text-right">Jacob</td>
+                                <td style="font-weight: normal;" id="5b" class="text-right"></td>
                             </tr>
                             </tbody>
                           </table>
+                          <br>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 fn1">
                         <h3>Network Stats</h3><br>
@@ -296,7 +331,7 @@
                 
                         <h5 class="text-uppercase">Site Map</h5>
                         <ul class="list-unstyled">
-                            <li><a href="/MHSupport/index.html">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="#">Help</a></li>
                         </ul>
 
