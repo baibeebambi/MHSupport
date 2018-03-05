@@ -1,3 +1,3 @@
 function runCode() {
-    alert ("www.minehut.com/panel"); 
+    alert ("www.minehut.com/"); 
 }
