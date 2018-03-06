@@ -93,7 +93,7 @@ $(document).ready(() => {
             actualq: 'How can I make a minigame queue?',
             q: ['need queue', 'make queue', 'make a queue', 'create a queue'],
             a: 'Ask <strong>Vocall</strong> (Minehut Player) in /msg. He\'ll help you.',
-            keywords: ['queue', 'crazycow30', 'vocall', 'minigame', 'backyardigans']
+            keywords: ['queue', 'crazycow30', 'vocall', 'minigame', 'backyardigans', 'minigames']
         },
         {
             actualq: 'Need help making a website?',
@@ -112,6 +112,12 @@ $(document).ready(() => {
             q: ['is ilemmino', 'know ilemmino'],
             a: 'Do you know iLemmino?',
             keywords: ['ilemmino']
+        },
+        {
+            actualq: 'Who made this website?',
+            q: ['made this website', 'created the website', 'created this website', 'made the website'],
+            a: 'ThatOneTqnk and Razviti, both active players on Minehut.',
+            keywords: ['tqnk', 'razviti', 'thatonetqnk']
         }
     ];
 
