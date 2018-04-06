@@ -20,7 +20,7 @@ $(document).ready(() => {
         {
             actualq: 'How can I learn skript?',
             q: ['skript help', 'learn skript'],
-            a: 'You can either ask CreativityUnited (Active minehut user) or go to the skunity site <a href="http://skunity.com">(here)</a>',
+            a: 'You can either ask CreativityUnited (Active minehut user) or go to the skunity site <a href="http://skunity.com" target=_blank>(here)</a>',
             keywords: ['skript', 'learn', 'creativityunited', 'riley']
         },
         {
