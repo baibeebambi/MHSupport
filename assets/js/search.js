@@ -18,6 +18,12 @@ $(document).ready(() => {
     */
     var questions = [
         {
+            actualq: 'How can I learn skript?',
+            q: ['skript help', 'learn skript'],
+            a: 'You can either ask CreativityUnited (Active minehut user) or go to the skunity site <a href="http://skunity.com">(here)</a>',
+            keywords: ['skript', 'learn', 'creativityunited', 'riley']
+        },
+        {
             actualq: 'How can I create a server?',
             q: ['create a server', 'make server', 'server make', 'make a server', 'create a server', 'create server', 'begin server', 'server begin'],
             a: 'Head over to the <a href="https://www.minehut.com" target=_blank>minehut.com</a> website! Then create an account, and boom, there\'s your server!',
