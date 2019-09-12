@@ -48,10 +48,10 @@ $(document).ready(() => {
             keywords: ['tqnk', 'smell', 'putrid', 'wtf']
         },
         {
-            actualq: 'Can I make my server accept versions before 1.12?',
-            q: ['before 1.12', 'other versions', 'accept other versions', 'change versions', 'change version'],
+            actualq: 'Can I make my server accept versions before 1.14?',
+            q: ['before 1.14', 'other versions', 'accept other versions', 'change versions', 'change version'],
             a: 'Yep! Just install the plugin <strong>ProtocolSupport!</strong>',
-            keywords: ['1.8', '1.9', '1.10', '1.11', 'version', 'versions', 'change', 'protocol', 'help']
+            keywords: ['1.8', '1.9', '1.10', '1.11', '1.12', '1.13', 'version', 'versions', 'change', 'protocol', 'help']
         },
         {
             actualq: 'Can I make my server private?',
