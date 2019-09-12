@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $.get("https://pocket.minehut.com/network/top_servers", (data) => {
+    $.get("https://api.minehut.com/network/top_servers", (data) => {
         $('#1').html(data.servers[0].name);
         $('#2').html(data.servers[1].name);
         $('#3').html(data.servers[2].name);
@@ -12,7 +12,7 @@ $(document).ready(() => {
         $('#5b').html(data.servers[4].playerCount + ' / ' + data.servers[4].maxPlayers);
     });
 
-    $.get("https://pocket.minehut.com/network/simple_stats", (data) => {
+    $.get("https://api.minehut.com/network/simple_stats", (data) => {
         var servp = (data.server_count / data.server_max) * 100
         servp = Math.ceil(servp);
         $("#myBar").css("width", servp + '%');
@@ -20,7 +20,7 @@ $(document).ready(() => {
 
         var ram = Math.ceil((Math.ceil(data.ram_count / 1000) / 512) * 100);
         $("#myBar2").css("width", ram + '%');
-        $(".rcoun").html('Ram Usage: ' + Math.ceil((data.ram_count / 1000)) + ' / 512');
+        $(".rcoun").html('Ram Usage: ' + Math.ceil((data.ram_count / 1000)) + ' / 4800');
         $(".reecn").html(data.player_count);        
     });
 });
