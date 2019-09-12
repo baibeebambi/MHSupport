@@ -18,7 +18,7 @@ $(document).ready(() => {
         $("#myBar").css("width", servp + '%');
         $(".scoun").html('Server Count: ' + data.server_count + ' / ' + data.server_max);
 
-        var ram = Math.ceil((Math.ceil(data.ram_count / 1000) / 512) * 100);
+        var ram = Math.ceil((Math.ceil(data.ram_count / 1000) / 4800) * 100);
         $("#myBar2").css("width", ram + '%');
         $(".rcoun").html('Ram Usage: ' + Math.ceil((data.ram_count / 1000)) + ' / 4800');
         $(".reecn").html(data.player_count);        
