@@ -118,12 +118,6 @@ $(document).ready(() => {
             q: ['is ilemmino', 'know ilemmino'],
             a: 'Do you know iLemmino?',
             keywords: ['ilemmino']
-        },
-        {
-            actualq: 'Who made this website?',
-            q: ['made this website', 'created the website', 'created this website', 'made the website'],
-            a: 'ThatOneTqnk and Razviti, both active players on Minehut.',
-            keywords: ['tqnk', 'razviti', 'thatonetqnk']
         }
     ];
 
