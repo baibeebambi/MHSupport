@@ -18,12 +18,6 @@ $(document).ready(() => {
     */
     var questions = [
         {
-            actualq: 'How can I learn skript?',
-            q: ['skript help', 'learn skript'],
-            a: 'You can either ask CreativityUnited (Active minehut user) or go to the skunity site <a href="http://skunity.com">(here)</a>',
-            keywords: ['skript', 'learn', 'creativityunited', 'riley']
-        },
-        {
             actualq: 'How can I create a server?',
             q: ['create a server', 'make server', 'server make', 'make a server', 'create a server', 'create server', 'begin server', 'server begin'],
             a: 'Head over to the <a href="https://www.minehut.com" target=_blank>minehut.com</a> website! Then create an account, and boom, there\'s your server!',
@@ -40,12 +34,6 @@ $(document).ready(() => {
             q: ['download world', 'download my world', 'my world', 'get world', 'world file'],
             a: 'Just do <em>/dl world</em> on your server!',
             keywords: ['world', 'download', 'file', 'help']
-        },
-        {
-            actualq: 'Why does tqnk smell like <em>really bad</em>?',
-            q: ['tqnk ass', 'wtf is tqnk', 'why does tqnk smell like ass', 'smelly tqnk', 'tqnk so bad'],
-            a: 'We don\'t really know to be honest. He does smell really bad though..',
-            keywords: ['tqnk', 'smell', 'putrid', 'wtf']
         },
         {
             actualq: 'Can I make my server accept versions before 1.14?',
@@ -102,22 +90,10 @@ $(document).ready(() => {
             keywords: ['queue', 'crazycow30', 'vocall', 'minigame', 'backyardigans', 'minigames']
         },
         {
-            actualq: 'Need help making a website?',
-            q: ['need website', 'get website', 'website help', 'help website'],
-            a: 'Razviti (Discord: @Raz#1720) can help ya. He likes to create websites for people for free!',
-            keywords: ['razviti', 'raz', 'website']
-        },
-        {
             actualq: 'Are staff applications available for Minehut?',
             q: ['staff applications', 'staff apps', 'staff application', 'staff app', 'become staff', 'apply staff', 'apply for staff'],
             a: 'Yep! Just head over to the Minehut Discord and applications are available under #applications!',
             keywords: ['apply', 'staff', 'application', 'applications', 'moderator', 'mod', 'help']
-        },
-        {
-            actualq: 'iLemmino?',
-            q: ['is ilemmino', 'know ilemmino'],
-            a: 'Do you know iLemmino?',
-            keywords: ['ilemmino']
         }
     ];
 
