@@ -97,9 +97,9 @@ $(document).ready(() => {
         },
         {
             actualq: 'Does minehut have a forums website?',
-            q: ['Minehut forums', 'Minehut forum'],
+            q: ['Minehut forums', 'Minehut forum', 'make club'],
             a: 'Yep! You can go to <a href="https://forums.minehut.com" target=_blank>forums.minehut.com</a>. The crazy part is you can make your own club and modify it to your needs.',
-            keywords: ['forums', 'forum', 'help']
+            keywords: ['forums', 'forum', 'club', 'clubs', 'help']
         }
     ];
 
