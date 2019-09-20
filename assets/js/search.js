@@ -94,6 +94,12 @@ $(document).ready(() => {
             q: ['staff applications', 'staff apps', 'staff application', 'staff app', 'become staff', 'apply staff', 'apply for staff'],
             a: 'Yep! Just head over to the Minehut Discord and applications are available under #applications!',
             keywords: ['apply', 'staff', 'application', 'applications', 'moderator', 'mod', 'help']
+        },
+        {
+            actualq: 'Does minehut have a forums website?',
+            q: ['Minehut forums', 'Minehut forum'],
+            a: 'Yep! You can go to <a href="https://forums.minehut.com" target=_blank>forums.minehut.com</a>',
+            keywords: ['forums', 'forum', 'help']
         }
     ];
 
