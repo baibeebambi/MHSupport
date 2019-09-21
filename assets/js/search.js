@@ -92,7 +92,7 @@ $(document).ready(() => {
         {
             actualq: 'Are staff applications available for Minehut?',
             q: ['staff applications', 'staff apps', 'staff application', 'staff app', 'become staff', 'apply staff', 'apply for staff'],
-            a: 'Yep! Just head over to the Minehut Discord and applications are available under #applications!',
+            a: 'Yep! Just head over to the <a href="https://forums.minehut.com" target=_blank>Minehut Forums</a> > Forums button > Scroll to the bottom > Applications. <br><img class="img-responsive" src="./assets/img/staffapplications.png"><br>',
             keywords: ['apply', 'staff', 'application', 'applications', 'moderator', 'mod', 'help']
         },
         {
